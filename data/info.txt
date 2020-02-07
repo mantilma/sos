@@ -1,1 +1,0 @@
-Database for my web site in json, yaml format.

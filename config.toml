@@ -2,7 +2,6 @@ title = "Notre-Dame de Paris"
 baseURL = "https://example.com"
 languageCode = "en-us"
 theme = "ananke"
-themesDir = "/home/marco/hugo_workspace/sos/themes"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
@@ -33,3 +32,4 @@ enableRobotsTXT = true
   background_color_class = "bg-black"
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 2
+  show_reading_time = true
