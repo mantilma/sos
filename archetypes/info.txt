@@ -1,1 +1,3 @@
-Metadata of our content.
+default.md è il front matter (i meta dati contenuti nei file .md) di default che viene creato ogni qual volta si crea un contenuto un file .md
+
+se creo un front matter di default posts.md questo varrà per tutti i content file dentro la cartella content/posts 

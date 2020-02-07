@@ -22,3 +22,10 @@ Hugo considera due tipi di pagine:
 - single page i contenuti specifici di ciascun post ovvero /posts/my-first-post, /posts/my-second-page
 
 le list page arrivano soltanto al primo livello delle cartelle in automatico ovvero fino a /posts. Se io metto un altra sottodirectory devo inserire un file _index.md
+
+Le front matter sono i metadati in alto come ad esempio:
+title: "Info"
+date: 2020-02-07T21:51:21+01:00
+draft: true
+
+questi poi possono essere acceduti nei miei template
