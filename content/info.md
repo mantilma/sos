@@ -36,3 +36,8 @@ questi poi possono essere acceduti nei miei template.
 questi sono pezzettini di html code da iniettare nei miei content .md files.
 Ad esempio posso inserire un form, un video ecc...
 {{< shortcode-name param1>}}
+
+*** TAXONOMIES ***
+Raggruppamento dei contenuti in base a tag e categorie in una pagina creata automaticamente da hugo (taxonomy page)
+tags: ["tag1", "tag2"]
+categories: ["cat1"]
