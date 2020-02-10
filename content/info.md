@@ -22,7 +22,8 @@ Hugo considera due tipi di pagine:
 - list page che sono la homepage, /posts
 - single page i contenuti specifici di ciascun post ovvero /posts/my-first-post, /posts/my-second-page
 
-le list page arrivano soltanto al primo livello delle cartelle in automatico ovvero fino a /posts. Se io metto un altra sottodirectory devo inserire un file _index.md
+le list page arrivano soltanto al primo livello delle cartelle in automatico ovvero fino a /posts. Se io metto un altra sottodirectory devo inserire un file _index.md.
+Infatti tutte le pagine che hanno un _index.md sono list page e per quelle al primo livello hugo le crea automaticamente poi noi semmai le possiamo sovrascrivverle.
 
 *** FRONT MATTER ***
 Le front matter sono i metadati che vedo in alto anche in questa pagina, come ad esempio:
@@ -41,3 +42,11 @@ Ad esempio posso inserire un form, un video ecc...
 Raggruppamento dei contenuti in base a tag e categorie in una pagina creata automaticamente da hugo (taxonomy page)
 tags: ["tag1", "tag2"]
 categories: ["cat1"]
+
+*** TEMPLATE ***
+se io ho importato un tema per modificarlo devo utilizzare la cartella layout che andrà a sovrascrivere la medesima presente sotto themes.
+Ad esempio se io voglio creare un nuovo template per le list page devo:
+1 creo una cartella layouts/_defaults
+2 creo un file list.html se voglio creare un template comune per le pagine list, oppure single.html per tutte le pagine single
+Per la pagina di home ci sarà la pagina index.html
+Poi abbiamo baseof.html the higher level template

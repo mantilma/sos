@@ -1,2 +1,2 @@
 Part of the site always the same in my web site. For instance
-header and footer.
+header and footer. Ci sono i file .html che definiscono un template.
