@@ -50,3 +50,44 @@ Ad esempio se io voglio creare un nuovo template per le list page devo:
 2 creo un file list.html se voglio creare un template comune per le pagine list, oppure single.html per tutte le pagine single
 Per la pagina di home ci sarà la pagina index.html
 Poi abbiamo baseof.html the higher level template
+
+*** VARIABLE ***
+Utilizzo le variabili all'interno della cartella layout dove ho gli html dei miei template per accedere a le informazioni che contengono.
+Le variabili sono impostante nel front matter dei file .md, ma anche ci sono quelle di default di hugo
+La sintassi è la seguente:
+{{ .nome_variabile }}
+Esempi:
+{{ .Title }}
+{{ .Date }}
+{{ .URL }}
+{{ .Params.myVar }} --> variabile creata da me ed inserita nel front matter del file .md della mia pagina
+
+Inoltre posso anche creare delle varibili direttamente nel codice .html della mia pagina:
+{{ $myVar := "Mia prima variabile"}} //questa è la dichiarazione
+<h1> {{ $myVar }} </h1> //accedo al valore
+Sulla pagina html mi stampera la string "Mia prima variabile"
+
+*** FUNCTIONS ***
+Anche le funzioni sono utilizzate all'interno della cartella layout dove ho gli .html dei miei template.
+Per chiamare una funzione:
+{{ functionName param1 param2 }}
+Esempi:
+{{ range .Pages }}  
+    {{.Title }}
+{{ end }} --> loop trough all the pages. Se questo pezzo di codice lo metto in una list page mi stamperà tutte le pagine create.
+
+*** IF STATMENT ***
+Utilizzato anche qeusto solo all'interno della cartella layout dove ho gli .html dei miei template.
+{{ $var1 := "dog" }}
+{{ $var1 := "cat" }}
+{{ if eq $var1 $var2 }}
+
+{{ else }}
+
+{{ end }}
+
+{{ if not eq $var1 $var2 }}
+
+{{ else }}
+
+{{ end }}
