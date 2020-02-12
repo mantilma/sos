@@ -91,3 +91,18 @@ Utilizzato anche qeusto solo all'interno della cartella layout dove ho gli .html
 {{ else }}
 
 {{ end }}
+
+*** DATA FOLDER FILES ***
+posso agigungere json e yaml file che possono contenere dati che mi server recuperare come ad esempio le città italiane piuttosto che una rubrica di nomi ecc.
+Posso poi accedere a queste informazioni nelle pagine .html del mio template:
+
+{{ Range .Site.Data.nome_del_file_json_salvato_sotto_la_cartella_data}}
+    {{.name}} --> accedo ai contenuti name del file json
+{{ end }}
+
+*** SHORTCODES ***
+per creare uno shortcode devo sotto layout:
+1 creare una cartella shortcodes
+2 creare un file .html
+3 nel mio content .md richiamare lo shortcode che verrà iniettato nella pagina.
+Ci sono degli shortcode già pronti all'utilizzo. Vedere i doc di hugo.
